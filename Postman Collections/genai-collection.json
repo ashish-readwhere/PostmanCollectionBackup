@@ -226,6 +226,39 @@
 			"response": []
 		},
 		{
+			"name": "Correct Grammer Copy",
+			"id": "c5e8ee78-846f-43fb-876a-cec38ff0eedd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Access-Key",
+						"value": "{{AccessKey}}",
+						"type": "text"
+					},
+					{
+						"key": "Secret-Key",
+						"value": "{{SecretKey}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\" : \"{{content}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/v1/genai/correct-grammer"
+			},
+			"response": []
+		},
+		{
 			"name": "Suggest Summary",
 			"id": "71cc8383-162b-4b7e-ad9a-4b2bd557bfb0",
 			"protocolProfileBehavior": {
