@@ -325,6 +325,39 @@
 			"response": []
 		},
 		{
+			"name": "Suggest Title Copy",
+			"id": "07c0cca8-4b0a-4175-a023-3ed186b6db05",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Access-Key",
+						"value": "{{AccessKey}}",
+						"type": "text"
+					},
+					{
+						"key": "Secret-Key",
+						"value": "{{SecretKey}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\" : \"{{content}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/v1/genai/suggest-title"
+			},
+			"response": []
+		},
+		{
 			"name": "Suggest Tags",
 			"id": "6cd5cb46-dc75-400d-9d80-40dc3eadebfb",
 			"protocolProfileBehavior": {
