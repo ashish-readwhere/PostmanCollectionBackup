@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Match - IPL 2025</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Live Match Details</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <section id="scorecard">
+            <h2><span id="team-a-name">Team A</span> vs <span id="team-b-name">Team B</span></h2>
+            <p><strong>Score:</strong> <span id="team-a-score">Team A - 0/0 (0.0 Overs)</span></p>
+            <p><span id="team-b-score">Team B - Yet to bat</span></p>
+            <p><strong>Toss:</strong> <span id="toss-details">Team A won the toss and elected to bat.</span></p>
+            <p><strong>Captains:</strong> <span id="captains-details">Team A Captain: Player X, Team B Captain: Player Y</span></p>
+        </section>
+
+        <section id="inning-summary">
+            <h3>Inning Summary</h3>
+            <div id="inning-1-summary">
+                <h4><span class="team-a-name-inning">Team A</span> - 1st Innings</h4>
+                <p>Total: <span id="inning-1-total">0</span> runs, Wickets: <span id="inning-1-wickets">0</span>, Overs: <span id="inning-1-overs">0.0</span></p>
+                <!-- Detailed summary like fall of wickets, top scorers could go here -->
+            </div>
+            <div id="inning-2-summary" style="display: none;"> <!-- Hidden until 2nd innings starts -->
+                <h4><span class="team-b-name-inning">Team B</span> - 2nd Innings</h4>
+                <p>Total: <span id="inning-2-total">0</span> runs, Wickets: <span id="inning-2-wickets">0</span>, Overs: <span id="inning-2-overs">0.0</span></p>
+                 <p>Target: <span id="inning-2-target">0</span></p>
+            </div>
+        </section>
+
+        <section id="over-summary">
+            <h3>Over Summary (Last Over)</h3>
+            <p id="last-over-details">0 1 W 4 0 2 (Bowler: Player Z, Batsman: Player A, Player B)</p>
+            <!-- More detailed ball-by-ball could appear here or be dynamically updated -->
+        </section>
+
+        <section id="live-commentary">
+            <h3>Live Commentary</h3>
+            <div id="commentary-box">
+                <p class="comment">Welcome to the live match between Team A and Team B!</p>
+                <p class="comment">0.1: Player Z to Player A, 1 run, pushed to long on.</p>
+                <!-- Commentary will be updated here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 IPL Live Blog</p>
+    </footer>
+</body>
+</html>

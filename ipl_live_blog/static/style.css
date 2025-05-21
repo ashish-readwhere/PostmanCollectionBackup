@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1rem;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2, h3, h4 {
+    color: #333;
+}
+
+#upcoming-matches .match-preview {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+#commentary-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 200px;
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+}
+
+#commentary-box .comment {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px dotted #eee;
+}
+
+#commentary-box .comment:last-child {
+    border-bottom: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+    background: #333;
+    color: #fff;
+}
+
+/* Placeholders for dynamic content spans */
+#team-a-name, #team-b-name,
+#team-a-score, #team-b-score,
+#toss-details, #captains-details,
+#last-over-details,
+.team-a-name-inning, .team-b-name-inning,
+#inning-1-total, #inning-1-wickets, #inning-1-overs,
+#inning-2-total, #inning-2-wickets, #inning-2-overs, #inning-2-target {
+    font-weight: bold;
+}
